@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -17,8 +16,12 @@ body {
     background-color: var(--body-bg-color);
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, a, span{
     color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {
@@ -35,12 +38,6 @@ p {
     display: flex;
 }
 
-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-}
-
 aside {
     float: left;
     padding-left: 40px;
@@ -49,8 +46,9 @@ aside {
 
 .cards{
     background-color: var(--bg-cards) ;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 .profile {
@@ -64,6 +62,29 @@ aside {
     border: 2px solid #00FF00;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
 }
 
+.info {
+    padding-top: 25px;
+    padding-left: 40px;
+    width: 348px;
+    height: 348px;
+}
 
+.feather {
+    color: var(--text-color);
+    margin-right: 20px;
+}
+
+.icon-line {
+    margin-bottom: 20px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
