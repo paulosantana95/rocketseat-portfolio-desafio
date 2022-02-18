@@ -18,9 +18,6 @@ body {
 
 h1, h2, h3, p, a, span{
     color: var(--text-color);
-}
-
-a {
     text-decoration: none;
 }
 
@@ -52,10 +49,12 @@ aside {
 }
 
 .profile {
+    display: flex;
+    flex-direction: column;
     width: 348px;
     height: 292px;
     box-shadow: 10px;
-    text-align: center;
+    align-items: center;
 }
 
 .profile img {
